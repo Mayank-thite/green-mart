@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <div class="site-icon">
+            <img src="./images/icon.png" alt="logo" width="55px" />
+          </div>
+          <div class="site-title" id="title">GreenMart</div>
+        </div>
+      </header>
+      <main>
+        <div class="content-area">
+          <h2 class="subtitles">Welcome to our mart!</h2>
+          <p class="welcome-para">
+            We stock only the best groceries in the market. Our groceries are
+            guranteed to be fresh as we source our items from the best! To get
+            started just add the products you want and provide the quantity in
+            the prompt. Once you are done shopping, click on the
+            <strong>checkout</strong> button and enter your name in the prompt.
+            After pressing the button, you will be provided with the full
+            invoice of the items you have added to the cart. Happy shopping!
+          </p>
+          <div class="card-row">
+            <div class="card">
+              <div>
+                <img
+                  src="./images/tomato-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#26472</div>
+              <div class="name">Tomatoes</div>
+              <div class="price">$5.91</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Tomato"
+                id="591"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+            <div class="card">
+              <div>
+                <img
+                  src="./images/banana-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#27935</div>
+              <div class="name">Banana</div>
+              <div class="price">$3.97</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Banana"
+                id="397"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+            <div class="card">
+              <div>
+                <img
+                  src="./images/strawberry-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#28671</div>
+              <div class="name">Strawberries</div>
+              <div class="price">$7.81</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Strawberry"
+                id="781"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+            <div class="card">
+              <div>
+                <img
+                  src="./images/blueberry-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#39182</div>
+              <div class="name">Blueberries</div>
+              <div class="price">$6.31</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Blueberry"
+                id="631"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card">
+              <div>
+                <img
+                  src="./images/orange-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#29401</div>
+              <div class="name">Oranges</div>
+              <div class="price">$4.07</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Orange"
+                id="407"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+            <div class="card">
+              <div>
+                <img
+                  src="./images/bread-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#72491</div>
+              <div class="name">Bread</div>
+              <div class="price">$2.19</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Bread"
+                id="219"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+            <div class="card">
+              <div>
+                <img
+                  src="./images/eggs-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#91283</div>
+              <div class="name">Eggs</div>
+              <div class="price">$1.81</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Egg"
+                id="181"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+            <div class="card">
+              <div>
+                <img
+                  src="./images/chilli-01.png"
+                  class="image-container-card"
+                  width="110px"
+                />
+              </div>
+              <div class="id">#617381</div>
+              <div class="name">Chillies</div>
+              <div class="price">$2.99</div>
+              <input
+                type="button"
+                value="Add to Cart"
+                class="card-button"
+                name="Chilli"
+                id="299"
+                onclick="addToCart(name, id)"
+              />
+            </div>
+          </div>
+          <div class="receipt-container">
+            <div id="checkout-button"></div>
+            <div id="receipt-table"></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>
+          Copyright &copy; <span id="year"></span> | Created by Mayank Thite
+        </div>
+      </footer>
+    </div>
+    <script>
+      setYearInFooter();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 15px 30px;
+  border: 1px solid #b3b3b3;
+  border-width: 1px 0px;
+}
+
+.site-icon {
+  display: inline-block;
+  width: 40%;
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 55px;
+  text-align: right;
+  width: 57%;
+}
+
+.content-area {
+  padding: 10px 30px;
+  background: #f8f8f8d6;
+}
+
+.subtitles {
+  margin: 10px 0;
+  font-size: 35px;
+  font-weight: 500;
+  color: #0066cc;
+}
+
+.welcome-para {
+  line-height: 1.5;
+  padding-right: 60px;
+}
+
+.card-row {
+  margin: 0px -30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  float: left;
+  width: 20%;
+  box-shadow: 0px 0px 10px #c6c6c6;
+  margin: 10px 10px;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.image-container-card {
+  border-radius: 15px;
+  margin: 15px 5px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+  background: #096bcc;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.card-button:hover {
+  background: #013466;
+}
+
+.name {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.id {
+  font-size: 13px;
+  color: #005177;
+  margin: 5px 0px;
+}
+
+.price {
+  padding: 10px 0px;
+  margin: 10px 0px 5px 0px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  color: green;
+}
+
+.receipt-container {
+  text-align: center;
+  margin: 20px 10px;
+  padding: 20px 30px;
+}
+
+.checkout-button {
+  cursor: pointer;
+  padding: 17px 70px;
+  border: 0;
+  border-radius: 99px;
+  background: #096bcc;
+  font-size: 16px;
+  color: white;
+  transition: 0.5s;
+}
+
+.checkout-button:hover {
+  background-color: #013466;
+}
+
+table,
+td,
+th {
+  border: 1px solid #c3c3c3;
+  text-align: left;
+  margin: auto;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+th {
+  text-align: center;
+  color: #096bcc;
+}
+
+.receipt-main-heading {
+  font-size: 25px;
+}
+
+.receipt-date {
+  text-align: right;
+  font-size: 17px;
+}
+
+.price-align-right {
+  text-align: right;
+}
+
+.item-align-right {
+  text-align: right;
+}
+
+footer {
+  padding: 40px 30px;
+  margin-top: 10px;
+  background: #464646;
+  color: #e7e7e7;
+  text-align: center;
+}
